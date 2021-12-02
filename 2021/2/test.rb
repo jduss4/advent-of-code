@@ -15,9 +15,9 @@ RSpec.describe Solution do
     end
   end
 
-  # describe "#problem_two" do
-  #   it "tests the second problem" do
-  #     expect(@solution.problem_two).to eq 5
-  #   end
-  # end
+  describe "#problem_two" do
+    it "tests the second problem" do
+      expect(@solution.problem_two).to eq 900
+    end
+  end
 end
