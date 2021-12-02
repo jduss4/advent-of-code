@@ -3,11 +3,11 @@ require_relative "../../solutions.rb"
 class Solution < Solutions
 
   def problem_one
-    calc_increases(@input)
+    calc_increases(@input.map(&:to_i))
   end
 
   def problem_two
-    windows = sum_windows(@input)
+    windows = sum_windows(@input.map(&:to_i))
     calc_increases(windows)
   end
 

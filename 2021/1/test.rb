@@ -2,12 +2,8 @@ require "rspec"
 require_relative "solution.rb"
 
 RSpec.describe Solution do
-  let(:input) {
-    [199, 200, 208, 210, 200, 207, 240, 269, 260, 263]
-  }
-
   before do
-    expect_any_instance_of(Solution).to receive(:get_input).and_return(input)
+    expect_any_instance_of(Solution).to receive(:file_name).and_return("input_test.txt")
     @solution = Solution.new(__dir__)
   end
 

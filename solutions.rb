@@ -5,8 +5,12 @@ class Solutions
     @input = get_input
   end
 
+  def file_name
+    "input.txt"
+  end
+
   def file_path
-    File.join(@dir_path, "input.txt")
+    File.join(@dir_path, file_name)
   end
 
   def read_file
@@ -14,6 +18,6 @@ class Solutions
   end
 
   def get_input
-    read_file.split("\n").map(&:to_i)
+    read_file.split("\n")
   end
 end
