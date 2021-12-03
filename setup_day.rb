@@ -21,21 +21,19 @@ touch("input.txt")
 touch("input_test.txt")
 touch("problem.txt")
 
-solution = %{
-  require_relative "../../solutions.rb"
+solution = %{require_relative "../../solutions.rb"
 
-  class Solution < Solutions
+class Solution < Solutions
 
-    def problem_one
-    end
-
-    def problem_two
-    end
+  def problem_one
   end
+
+  def problem_two
+  end
+end
 }
 
-tests = %{
-require "rspec"
+tests = %{require "rspec"
 require_relative "solution.rb"
 
 RSpec.describe Solution do
@@ -56,7 +54,6 @@ RSpec.describe Solution do
     end
   end
 end
-
 }
 
 template("test.rb", tests)
